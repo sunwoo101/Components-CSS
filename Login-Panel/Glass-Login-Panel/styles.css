@@ -1,0 +1,65 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 50vw;
+    height: 50vh;
+}
+
+input {
+    width: 240px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 5px 5px;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    all: unset;
+
+    width: 238px;
+    height: 28px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
