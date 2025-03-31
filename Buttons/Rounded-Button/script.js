@@ -1,0 +1,3 @@
+function alertPopUp() {
+    alert("Hello");
+}
